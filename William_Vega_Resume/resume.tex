@@ -1,0 +1,170 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{anyfontsize}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/williamarthurvega/}{\Large William Vega}} & Email : \href{mailto:williamvega1006@gmail.com}{williamvega1006@gmail.com}\\
+  \href{https://www.linkedin.com/in/williamarthurvega/}{linkedin.com/in/williamarthurvega/}\\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tyler Technologies, Inc}{Plano, TX}
+      {Software Developer}{May. 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{Research}
+          {Customer facing service that provides court and case information to legal professionals and the general public.}
+        \resumeItem{FirmSync}
+          {Contributed to backend service for making court and case data in Research available via endpoints.}
+        \resumeItem{Machine Learning Pipeline}
+          {Developed data pipeline to feed into ML algorithm to determine customer churn using S3, Lambda, and SQL.}
+        \resumeItem{Testing}
+          {Utilized NUnit and Moq to write unit tests for API endpoints; followed Page Object Model when writing Selenium UI tests.}
+        \resumeItem{Development Environment}
+          {Microservice based; AWS, ElasticSearch, C\#, SQL, AngularJS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {RaceTrac, Inc}{Atlanta, GA}
+      {Information Systems Intern}{May 2019 - July 2019}
+      \resumeItemListStart
+        \resumeItem{Intranet Accounting Support}
+          {Gathered requirements from Accounting department and developed a website to enable faster customer service support times by allowing the department to write internal codes into a SQL database.}
+        \resumeItem{Design}
+          {Designed support website with mentor: implemented site using MVC framework, Bootstrap, and jQuery for faster development time. Created schemas and data-flow diagrams using UML and business processes modeling notation (BPMN).}
+        \resumeItem{Data Processing Utility}
+          {Internal job that allows the services/amenities available at each station to be automatically updated to corporate website, with the option to export the data to JSON.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Projects}{Remote}
+      {Hackathons and Personal}{Aug. 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{1st Place: BlackRock Sustainability Challenge, UGA Hackathon}
+          {Contributed to the backend of a web app using Flask, and hosted the app on Google
+            Compute Engine via Google Cloud Platform.}
+        \resumeItem{1st Place: Marqeta Spring Payments Hackathon}
+          {Contributed to the backend of EinbergAndYing.com (inactive), automating various functions of
+            Marqeta’s API for consumers; used Flask, MySQL, and Python.}
+        \resumeItem{Web Scraper}
+          {Utilized Python and Selenium to automate data collection from a legacy portal for a
+            gaming company, Albany Amusement, LLC.}
+        \resumeItem{TypeAStudent}
+          {Currently migrating to AWS. Created a financial and college planning website based on personal experiences with dual-enrollment and finishing college in three years.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {MS Computer Science }{Aug. 2020 -- Dec. 2023}
+    \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+          {Concentration in Computing Systems; Graduate Introduction to Operating Systems, Knowledge-Based Artificial Intelligence, Machine Learning for Trading}
+    \resumeItemListEnd
+    \resumeSubheading
+      {University of Georgia}{Athens, GA}
+      {BBA Management Information Systems;  GPA: 3.92/4.0}{Aug. 2017 -- Aug. 2020}
+    \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+          {Concentration in Data Analytics; Certificate in Computing, which included Computer Science I \& II, Data Structures, Advanced Data Analytics, Systems Programming, and Systems Analysis and Design}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS & CERTS-----------------
+\section{Skills and Certificates}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Technical}
+      {Amazon Web Services, SageMaker, C\#, SQL, Python, Elasticsearch, SMSS, AngularJS, Microsoft Excel, Proficiency in Microsoft Office Suite}
+    \resumeSubItem{Certificates}
+      {Lean Six Sigma Yellow Belt}
+  \resumeSubHeadingListEnd
+
+\color{white}{\fontsize{0.5pt}{0.5pt}\selectfont 0.5pt{We are seeking a C# Developer who can work with project teams to plan and develop requirements and provide ongoing development support for existing applications.Create technical documentation for new and existing web applicationsAnalyze potential software issues and efficiently resolveCreate strategies for performance tuning and monitoring to maintain overall application stabilityWork closely with support and release management teams to prepare code changes for scheduled releasesA minimum of (2) years experience building and maintaining enterprise and/or internet applicationsExcellent communication and documentation skillsProven hands-on experience with .NET framework, C#, ReactJS, Web Services, SQL ServerUnderstands that the success of a developer is to understand the core business processes of the business unit and business requirements as well as the architecture patterns and technology strategy (e.g., Transformation, SmartCore, DevOps). Conceive and write detailed software implementations/code while ensuring that their code/configurations adhere to the security, logging, error handling, and performance standards and non-functional requirements. Writes, configures, and integrates code to create the software that aligns with architecture patterns and technology strategy. Understands the implications of various components (including technology strategy & architecture) to the overall design of a program, system, or eco-system. Evaluates new technologies for fit with the program/system/eco-system and the associated upstream and downstream impacts on process, data, risk (e.g., security). Works toward the objective of defect free software. Ensures that systems functionally meet requirements, align with architecture and promote the development of common assets. Supports the resolution of production issues and problems. Makes recommendations to improve BMO processes & systems.Supports research and development of development frameworks, and definition of standards.Leads and implements initiatives as required to deliver business objectives.Conducts independent analysis and assessment to resolve strategic issues.Builds effective relationships with internal/external stakeholders and ensures alignment.Monitors and tracks performance, and addresses any issues.Reviews the work of other team members as required.Provides input into the planning and implementation of operational programs.Decomposes business requirements and translates them into detailed design specifications and code.Interacts with key business & technology stakeholders to define, analyze, and deliver requirements that reflect the needs of both the business and end-customers.Assesses the costs and benefits for different solutions and recommend/decide on appropriate designs.Designs solutions, writes code, performs unit testing, develops appropriate artefacts / documentation, and facilitates final delivery.Supports production issues, includes independently completing root-cause analysis and diagnosis.Devises new algorithms and data structures for target environment and platform attributes in alignment with architectural patterns.Builds solutions that are supportable, scalable and achieve our aspiration of common assets.Recommends or automates approaches to streamline and integrate technological processes and/or systems to improve operational efficiency and effectiveness.Supports the management of specific project deliverables & outcomes.Identifies opportunities to strengthen the development capability, such as: sharing expertise to promote technical development, mentoring employees, building communities of practice and networks.Stays abreast of industry technical and business trends through participation in professional associations, practice communities & individual learning.Focus is primarily on business/group within BMO; may have broader, enterprise-wide focus.Exercises judgment to identify, diagnose, and solve problems within given rules.Works independently on a range of complex tasks, which may include unique situations.Broader work or accountabilities may be assigned as needed. Qualifications:Typically 2-4 years of work experience in IT or business environment and/or B.S./B.A. in computer science, engineering, information systems, math or businessProficient level of knowledge in domain.Knowledge of software development practices, concepts, and technology obtained through formal training and/or work experience.Knowledge of required programming languages and can code with little oversight.Knowledge of technical/business environment and processes.Understand functional aspects and technical behavior of the underlying operating system, development environment, and deployment practices.Have facility with and understanding of the ecosystem that code operates in.Technical proficiency gained through education and/or business experience.Verbal & written communication skills - In-depth.Collaboration & team skills - In-depth.Analytical and problem solving skills - In-depth.Influence skills - In-depth.Data driven decision making - In-depth.
+}}
+%
+\end{document}
+
+
